@@ -5,10 +5,15 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Articles;
+//use App\Depot;
+use App\Magasine;
+use App\Client;
+//use App\Caisse;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+     use Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -16,7 +21,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+    'User_Id','user_Image' ,'user_Type' ,'user_Tel','user_Name',
+    'user_Bloquer','email','password'       
     ];
 
     /**
@@ -27,13 +33,29 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    public function article(){
+        return $this->hasMany('articles');
+    }
 
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+   /* public function depot(){
+        return $this->hasMany('Depot');
+    } */
+
+    public function magasine(){
+        return $this->hasMany('Magasine');
+    }
+
+    public function client(){
+        return $this->hasMany('Client');
+    }
+
+   /* public function caisse()
+    {
+        return $this->hasOne('Caisse');
+    }
+
+    */
+
+   
 }

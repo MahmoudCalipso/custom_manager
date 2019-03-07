@@ -10,7 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes();
+
+Route::get('/', 'HomeController@index')->name('index');
+
 Route::group([ 'middleware'=>'auth'], function () {   
 
 	//client route
@@ -37,12 +39,21 @@ Route::group([ 'middleware'=>'auth'], function () {
     Route::post('/article/store', 'ArticleController@store')->name('article.store'); 
     Route::get('/article/delete/{id}','ArticleController@destroy')->name('article.delete'); 
 
+    //Document route 
+    Route::get('/document', 'DocumentController@index')->name('document.index'); 
+    Route::get('/document/edit/{id}', 'DocumentController@edit')->name('document.edit');
+    Route::post('/document/update/{id}', 'DocumentController@update')->name('document.update');
+    Route::get('/document/create', 'DocumentController@create')->name('document.create');
+    Route::post('/document/store', 'DocumentController@store')->name('document.store'); 
+    Route::get('/document/delete/{id}','DocumentController@destroy')->name('document.delete'); 
+
 
 
 });
 
-/*
-Route::get('/', function () {
-    return view('welcome');
-});
-*/
+
+
+
+
+
+

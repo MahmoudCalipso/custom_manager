@@ -24,7 +24,7 @@ class CreateDocLigStksTable extends Migration
             //
             // jointure avec la table doc entete stock
             $table->unsignedInteger('StkDoc_Ent_Id');
-            $table->foreign('StkDoc_Ent_Id')->references('StkDoc_Ent_Id')->on('doc__entete__s_t_k_s');
+            $table->foreign('StkDoc_Ent_Id')->references('StkDoc_Ent_Id')->on('doc_entete_s_t_k_s');
             //
             $table->timestamps();
         });
