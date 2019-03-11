@@ -10,4 +10,5 @@ class DocEnteteStks extends Model
     {
         return $this->belongsToMany('articles');
     }
+    
 }
