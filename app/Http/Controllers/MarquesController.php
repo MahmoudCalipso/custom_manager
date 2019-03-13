@@ -14,7 +14,8 @@ class MarquesController extends Controller
      */
     public function index()
     {
-        //
+        $marques = Marques::all();
+        return view('marque.index',compact('marques'));
     }
 
     /**
@@ -24,7 +25,7 @@ class MarquesController extends Controller
      */
     public function create()
     {
-        //
+        return View('marque.create');
     }
 
     /**
@@ -35,19 +36,16 @@ class MarquesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'Marque_Intitule' => 'required'
+        ]);
+        $marque = new Marques([
+            'Marque_Intitule'=> $request->get('Marque_Intitule')
+        ]);
+        $marque->save();
+        return redirect('marque.index')->with('success', 'Marque saved!');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Marques  $marques
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Marques $marques)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.
@@ -55,9 +53,10 @@ class MarquesController extends Controller
      * @param  \App\Marques  $marques
      * @return \Illuminate\Http\Response
      */
-    public function edit(Marques $marques)
+    public function edit($id)
     {
-        //
+        $marque = Marques::find($id);
+        return View('marque.edit', compact('marque'));
     }
 
     /**
@@ -67,9 +66,18 @@ class MarquesController extends Controller
      * @param  \App\Marques  $marques
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Marques $marques)
+    public function update(Request $request, $id)
     {
-        //
+
+        $request->validate([
+            'Marque_Intitule' => 'required'
+        ]);
+        $marque = Marques::find($id);
+        $marque->Marque_Intitule= $request->get('Marque_Intitule');
+        $marque->save();
+        return view('marque.index')->with('success', 'Marque Updated!');
+
+
     }
 
     /**
@@ -78,8 +86,12 @@ class MarquesController extends Controller
      * @param  \App\Marques  $marques
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Marques $marques)
+    public function destroy($id)
     {
-        //
+        $marque = Articles::find($id);
+        $marque->delete();
+
+        return redirect('marque.index')->with('success', 'Marque deleted!');
+
     }
 }

@@ -221,9 +221,8 @@
 				} else {
 					function block(e) {
 						e.preventDefault();
-					};
-
-					// Block mousedown and click to prevent selection change
+                    }
+                    // Block mousedown and click to prevent selection change
 					dom.bind(ed.getDoc(), 'mousedown', block);
 					dom.bind(ed.getDoc(), 'keydown', block);
 
@@ -291,7 +290,7 @@
 				}
 			}
 
-			// Check if we should use the new auto process method			
+			// Check if we should use the new auto process method
 			if (getParam(ed, "paste_auto_cleanup_on_paste")) {
 				// Is it's Opera or older FF use key handler
 				if (tinymce.isOpera || /Firefox\/2/.test(navigator.userAgent)) {
@@ -354,7 +353,7 @@
 						h = h.replace(v[0], v[1]);
 				});
 			}
-			
+
 			if (ed.settings.paste_enable_default_filters == false) {
 				return;
 			}
@@ -564,9 +563,8 @@
 						);
 
 						return cls.length ? ' class="' + cls.join(" ") + '"' : '';
-				};
-
-				h = h.replace(/ class="([^"]+)"/gi, removeClasses);
+                }
+                h = h.replace(/ class="([^"]+)"/gi, removeClasses);
 				h = h.replace(/ class=([\-\w]+)/gi, removeClasses);
 			}
 
@@ -589,7 +587,7 @@
 			if (ed.settings.paste_enable_default_filters == false) {
 				return;
 			}
-			
+
 			if (o.wordContent) {
 				// Remove named anchors or TOC links
 				each(dom.select('a', o.node), function(a) {
@@ -770,9 +768,8 @@
 					else
 						content = content.replace(v[0], v[1]);
 				});
-			};
-
-			if ((typeof(content) === "string") && (content.length > 0)) {
+            }
+            if ((typeof(content) === "string") && (content.length > 0)) {
 				// If HTML content with line-breaking tags, then remove all cr/lf chars because only tags will break a line
 				if (/<(?:p|br|h[1-6]|ul|ol|dl|table|t[rdh]|div|blockquote|fieldset|pre|address|center)[^>]*>/i.test(content)) {
 					process([

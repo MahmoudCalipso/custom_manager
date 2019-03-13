@@ -38,9 +38,7 @@ class User extends Authenticatable
         return $this->hasMany('articles');
     }
 
-   /* public function depot(){
-        return $this->hasMany('Depot');
-    } */
+
 
     public function magasine(){
         return $this->hasMany('Magasine');
@@ -50,12 +48,6 @@ class User extends Authenticatable
         return $this->hasMany('Client');
     }
 
-   /* public function caisse()
-    {
-        return $this->hasOne('Caisse');
-    }
-
-    */
 
    
 }

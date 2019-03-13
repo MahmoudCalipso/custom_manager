@@ -29,13 +29,13 @@
     Route::post('/client/store', 'ClientController@store')->name('client.store');
     Route::get('/client/delete/{id}', 'ClientController@destroy')->name('client.delete');
 
-    //fournisseur route ('provider')
-    Route::get('/provider', 'ProviderController@index')->name('provider.index');
-    Route::get('/provider/edit/{id}', 'ProviderController@edit')->name('provider.edit');
-    Route::post('/provider/update/{id}', 'ProviderController@update')->name('provider.update');
-    Route::get('/provider/create', 'ProviderController@create')->name('provider.create');
-    Route::post('/provider/store', 'ProviderController@store')->name('provider.store');
-    Route::get('/provider/delete/{id}','ProviderController@destroy')->name('provider.delete');
+    //fournisseur route
+    Route::get('/fournisseurs', 'FournisseurController@index')->name('fournisseur.index');
+    Route::get('/fournisseur/edit/{id}', 'FournisseurController@edit')->name('fournisseur.edit');
+    Route::post('/fournisseur/update/{id}', 'FournisseurController@update')->name('fournisseur.update');
+    Route::get('/fournisseur/create', 'FournisseurController@create')->name('fournisseur.create');
+    Route::post('/fournisseur/store', 'FournisseurController@store')->name('fournisseur.store');
+    Route::get('/fournisseur/delete/{id}','FournisseurController@destroy')->name('fournisseur.delete');
 
     //Article route
     Route::get('/article', 'ArticleController@index')->name('article.index');

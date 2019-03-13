@@ -209,7 +209,7 @@
 	else {
 		factory(jQuery);
 	}
-}
+};
 (function($) {
     'use strict';
 
@@ -2541,7 +2541,7 @@
         var el = document.createElement('canvas');
         $.fn.sparkline.hasCanvas = !!(el.getContext && el.getContext('2d'));
 
-    })()
+    })();
 
     VShape = createClass({
         init: function (target, id, type, args) {
@@ -3045,4 +3045,5 @@
         }
     });
 
-}));
+});
+)

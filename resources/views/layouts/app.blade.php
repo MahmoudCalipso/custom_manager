@@ -56,7 +56,7 @@
     <div class="navbar navbar-inverse top-nav">
         <div class="navbar-inner">
             <div class="container">
-                <span class="home-link"><a href="index.html" class="icon-home"></a></span><a class="brand" href="./index.html"><img src="images/logo-falgun.png" width="103" height="50" alt="Falgun"></a>
+                <span class="home-link"><a href="index.html" class="icon-home"></a></span><a class="brand" href="./index.html"><img src="../images/logo-falgun.png" width="103" height="50" alt="Falgun"></a>
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon-th-large"></i> Annuaire <b class="icon-angle-down"></b></a>

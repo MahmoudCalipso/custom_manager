@@ -14,12 +14,12 @@ class Fournisseur extends Model
      *
      * @var array
      */
-    protected $fillable = [     
-		'Four_name','Four_mail','Four_adr','Four_tel'		
+    protected $fillable = [
+        'Four_name', 'Four_mail', 'Four_adr', 'Four_pays', 'Four_tel'
     ];
 
     public function article()
     {
-        return $this->hasMany('article');
+        return $this->hasMany('Articles');
     }
 }

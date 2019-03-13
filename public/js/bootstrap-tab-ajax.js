@@ -9,7 +9,7 @@
         var selector_no_hash = $this.selector.substr(1);
         if (tbCnt.length === 0) {
             var div_tab_content = [];
-            div_tab_content.push("<div class='tab-content'>")
+            div_tab_content.push("<div class='tab-content'>");
             div_tab_content.push("<div class='tab-pane active' id='" + selector_no_hash + "-content'>");
             div_tab_content.push("</div>");
             div_tab_content.push("</div>");

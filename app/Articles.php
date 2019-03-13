@@ -3,20 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\User;
-use App\Categorie;
-use App\Tva;
-use App\Garanties;
-use App\Famille_articles;
-use App\Marques;
-use App\Magasins;
+
 
 
 
 class Articles extends Model
 {
     use Notifiable;
-   
+
     protected $fillable = [
 		'Art_Id', 'Art_Ref','Art_CodeBarre','Art_Designation','Art_DateAchat','Art_Bloquer',
 		'Art_PrixUht','Art_Desc','Art_Remise','Promo', 'Pays','Art_ImageCodeABarre','Art_PrixUTtc',
@@ -33,7 +27,7 @@ class Articles extends Model
     {
         return $this->hasOne('tva');
     }
-    
+
     public function garanties()
     {
         return $this->hasOne('garanties');
@@ -53,6 +47,6 @@ class Articles extends Model
     {
         return $this->hasOne('magasins');
     }
-    
+
 
 }

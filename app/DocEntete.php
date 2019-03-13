@@ -3,8 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use app/Magasins;
-use app/Articles;
+
 class DocEntete extends Model
 {
     use Notifiable;

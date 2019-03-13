@@ -13,10 +13,12 @@ class CreateFournisseursTable extends Migration
      */
     public function up()
     {
-        Schema::create('fournisseurs', function (Blueprint $table) {
+        Schema::create('fournisseur', function (Blueprint $table) {
             $table->increments('Four_Id');
-            $table->string('Four_name');
+            $table->string('Four_firstName');
+            $table->string('Four_lastName');
             $table->string('Four_mail');
+            $table->string('Four_Pays');
             $table->string('Four_adr');
             $table->string('Four_tel');
 //
@@ -35,6 +37,6 @@ class CreateFournisseursTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fournisseurs');
+        Schema::dropIfExists('fournisseur');
     }
 }

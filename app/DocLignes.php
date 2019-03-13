@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use app/DocEntete;
+
 class DocLignes extends Model
 {
      use Notifiable;

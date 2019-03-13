@@ -14,7 +14,8 @@ class TvaController extends Controller
      */
     public function index()
     {
-        //
+        $tva_list = tva::all();
+        return view('tva.index', compact('tva_list'));
     }
 
     /**
@@ -24,7 +25,7 @@ class TvaController extends Controller
      */
     public function create()
     {
-        //
+        return View('tva.create');
     }
 
     /**
@@ -35,19 +36,16 @@ class TvaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'TVA_Des' => 'required'
+        ]);
+        $tva = new tva([
+            'TVA_Des' =>  $request->get('TVA_Des')
+        ]);
+        $tva->save();
+        return redirect('tva.index')->with('success', 'TVA saved!');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\tva  $tva
-     * @return \Illuminate\Http\Response
-     */
-    public function show(tva $tva)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.
@@ -55,9 +53,10 @@ class TvaController extends Controller
      * @param  \App\tva  $tva
      * @return \Illuminate\Http\Response
      */
-    public function edit(tva $tva)
+    public function edit($id)
     {
-        //
+        $tva = tva::find($id);
+        return View('tva.edit', compact('tva'));
     }
 
     /**
@@ -67,9 +66,15 @@ class TvaController extends Controller
      * @param  \App\tva  $tva
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, tva $tva)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'TVA_Des' => 'required'
+        ]);
+        $tva = tva::find($id);
+        $tva->TVA_Des = $request->get('TVA_Des');
+        $tva->save();
+        return redirect('tva.index')->with('success', 'TVA updated!');
     }
 
     /**
@@ -78,8 +83,12 @@ class TvaController extends Controller
      * @param  \App\tva  $tva
      * @return \Illuminate\Http\Response
      */
-    public function destroy(tva $tva)
+    public function destroy($id)
     {
-        //
+        $tva = tva::find($id);
+        $tva->delete();
+
+        return redirect('tva.index')->with('success', 'TVA deleted!');
+
     }
 }

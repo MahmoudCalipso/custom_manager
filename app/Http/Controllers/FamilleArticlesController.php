@@ -14,7 +14,9 @@ class FamilleArticlesController extends Controller
      */
     public function index()
     {
-        //
+        $famArt = Famille_articles::all();
+
+        return view('fm_art.index', compact('famArt'));
     }
 
     /**
@@ -24,7 +26,7 @@ class FamilleArticlesController extends Controller
      */
     public function create()
     {
-        //
+        return View('fm_art.create');
     }
 
     /**
@@ -35,29 +37,30 @@ class FamilleArticlesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'FamArt_Type'=>'required'
+            ]);
+        $fmArt = new Famille_articles([
+            'FamArt_Type' =>  $request->get('FamArt_Type')
+           ]);
+        $fmArt->save();
+        return redirect('fm_art.index')->with('success', 'Famille_Article saved!');
+
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Famille_articles  $famille_articles
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Famille_articles $famille_articles)
-    {
-        //
-    }
+
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Famille_articles  $famille_articles
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Famille_articles $famille_articles)
+    public function edit($id)
     {
-        //
+        $fm_Article = Famille_articles::find($id);
+
+        return View('fm_art.edit', compact('fm_Article'));
     }
 
     /**
@@ -67,9 +70,16 @@ class FamilleArticlesController extends Controller
      * @param  \App\Famille_articles  $famille_articles
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Famille_articles $famille_articles)
+    public function update(Request $request, $id)
     {
-        //
+        $request-> validate([
+            'FamArt_Type'=>'required'
+        ]);
+         $famArt = Famille_articles::find($id);
+         $famArt->FamArt_Type= $request->get('FamArt_Type');
+         $famArt->save();
+        return redirect('fm_art.index')->with('success', 'Famille_Article updated!');
+
     }
 
     /**
@@ -78,8 +88,10 @@ class FamilleArticlesController extends Controller
      * @param  \App\Famille_articles  $famille_articles
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Famille_articles $famille_articles)
+    public function destroy($id)
     {
-        //
+        $famArt = Famille_articles::find($id);
+        $famArt->delete();
+        return redirect('fm_art.index')->with('success', 'Famille_Article deleted!');
     }
 }

@@ -1,7 +1,7 @@
 @extends('layouts_leftBar.left_bar')
-@extends('layouts.global')
+@extends('layouts.app')
 
-   
+
 
 @section('navbar')
 @parent

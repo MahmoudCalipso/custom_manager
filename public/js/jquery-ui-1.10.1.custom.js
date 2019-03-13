@@ -2911,7 +2911,7 @@ $.widget("ui.resizable", $.ui.mouse, {
 
 				//TODO: What's that good for? There's not anything to be executed left
 				if(!$(this.handles[i]).length) {
-					continue;
+
 				}
 			}
 		};
@@ -12666,9 +12666,8 @@ $.widget( "ui.tooltip", {
 });
 
 }( jQuery ) );
-;(jQuery.effects || (function($, undefined) {
-
-var dataSpace = "ui-effects-";
+(jQuery.effects || (function ($, undefined) {
+    var dataSpace = "ui-effects-";
 
 $.effects = {
 	effect: {}

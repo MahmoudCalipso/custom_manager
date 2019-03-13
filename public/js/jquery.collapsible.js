@@ -57,7 +57,7 @@
 		var opts = $.extend({}, $.fn.collapsible.defaults, options);
 		
 		//store any opened default values to set cookie later
-		var opened = new Array();
+		var opened = [];
 		
 		//iterate each matched object, bind, and open/close
 		obj.each(function() {
@@ -148,9 +148,8 @@
 		}
 		
 		return obj;
-	};
-	
-	//load opts from object
+    }
+    //load opts from object
 	function loadOpts($this) {
 		return $this.data('collapsible-opts');
 	}
@@ -369,7 +368,7 @@
 	function getDefaultOpen(opts)
 	{
 		//initialize an empty array
-		defaultOpen = new Array();
+		defaultOpen = [];
 		
 		//if there is a list, lets split it into an array
 		if (opts.defaultOpen != '') {

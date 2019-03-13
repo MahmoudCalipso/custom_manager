@@ -9,7 +9,7 @@
 !function ($) {
 
     var DateRangePicker = function (element, options, cb) {
-        var hasOptions = typeof options == 'object'
+        var hasOptions = typeof options == 'object';
         var localeObject;
 
         //state
@@ -322,7 +322,7 @@
             }
 
             this.changed = false;
-            
+
             this.element.trigger('shown',{target:e.target,picker:this});
 
             $(document).on('mousedown', $.proxy(this.hide, this));
@@ -508,11 +508,11 @@
             var html = '<table class="table-condensed">';
             html += '<thead>';
             html += '<tr>';
-            
+
             // add empty cell for week number
             if (this.showWeekNumbers)
                 html += '<th></th>';
-            
+
             if (!minDate || minDate < calendar[1][1])
             {
                 html += '<th class="prev available"><i class="icon-arrow-left"></i></th>';
@@ -533,7 +533,7 @@
 
             html += '</tr>';
             html += '<tr>';
-            
+
             // add week number label
             if (this.showWeekNumbers)
                 html += '<th class="week">' + this.locale.weekLabel + '</th>';
@@ -548,11 +548,11 @@
 
             for (var row = 0; row < 6; row++) {
                 html += '<tr>';
-                
+
                 // add week number
                 if (this.showWeekNumbers)
                     html += '<td class="week">' + calendar[row][0].getWeek() + '</td>';
-                
+
                 for (var col = 0; col < 7; col++) {
                     var cname = 'available ';
                     cname += (calendar[row][col].getMonth() == calendar[1][1].getMonth()) ? '' : 'off';
@@ -576,7 +576,7 @@
                         if (calendar[row][col].equals(this.startDate)) { cname += ' start-date '; }
                         if (calendar[row][col].equals(this.endDate)) { cname += ' end-date '; }
                     }
-                    
+
                     var title = 'r' + row + 'c' + col;
                     html += '<td class="' + cname.replace(/\s+/g,' ').replace(/^\s?(.*?)\s?$/,'$1') + '" title="' + title + '">' + calendar[row][col].getDate() + '</td>';
                 }

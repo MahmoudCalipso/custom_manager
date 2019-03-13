@@ -5,7 +5,7 @@
 /*
 SETUP
 */
-var slideSpeed = 'slow';    // 'slow', 'normal', 'fast', or miliseconds 
+var slideSpeed = 'slow';    // 'slow', 'normal', 'fast', or miliseconds
 //end setup
 
 var pathname = window.location.pathname;
@@ -18,7 +18,7 @@ $(function() {
         add 'Current' class to the current page
     */
     $('.accordion-nav a').each(function() {
-        var thisHref = $(this).attr('href')
+        var thisHref = $(this).attr('href');
         if ((window.location.pathname.indexOf(thisHref) == 0) || (window.location.pathname.indexOf('/' + thisHref) == 0)) {
         $(this).addClass('Current');
     }
@@ -43,7 +43,7 @@ $(function() {
             }
         }
     });
-    
+
     /*
         open/close current each list on click
     */
@@ -65,8 +65,8 @@ $(function() {
     });
 
     //End Required Section
-    
-   
-    
+
+
+
 });
 

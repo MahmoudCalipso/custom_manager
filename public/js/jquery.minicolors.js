@@ -70,7 +70,7 @@ if(jQuery) (function($) {
 				// Get an RGB(A) string based on the current color/opacity
 				case 'rgbString':
 				case 'rgbaString':
-					return rgbString($(this), method === 'rgbaString')
+					return rgbString($(this), method === 'rgbaString');
 				
 				// Get/set settings on the fly
 				case 'settings':

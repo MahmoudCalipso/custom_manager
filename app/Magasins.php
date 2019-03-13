@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use app/Articles;
+
 class Magasins extends Model
 {
     use Notifiable;
