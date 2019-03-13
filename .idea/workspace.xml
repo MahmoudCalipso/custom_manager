@@ -1,107 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e07a455-bef0-4d38-81f3-a2520dd15a7a" name="Default Changelist" comment="Third commit change">
-      <change afterPath="$PROJECT_DIR$/resources/views/fournisseur/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/fournisseur/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/fournisseur/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/fournisseur/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/CALIPSO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/CALIPSO.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="7e07a455-bef0-4d38-81f3-a2520dd15a7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Articles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Banques.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Banques.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DocEntete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DocEntete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DocEnteteStks.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DocEnteteStks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DocLigStks.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DocLigStks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DocLignes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DocLignes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Famille_articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Famille_articles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Fournisseur.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Fournisseur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Garanties.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Garanties.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DocumentController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FamilleArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FamilleArticlesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MarquesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MarquesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProviderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FournisseurController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TvaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TvaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/LigReglements.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/LigReglements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Magasins.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Magasins.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Marques.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Marques.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tva.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tva.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_28_131804_create_fournisseurs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_28_131804_create_fournisseurs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_28_133158_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_28_133158_create_clients_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/ZeroClipboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ZeroClipboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/accordion.nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/accordion.nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap-colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/bootstrap-colorpicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap-fileupload.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/bootstrap-fileupload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap-tab-ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/bootstrap-tab-ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/daterangepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/daterangepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/excanvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/excanvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/wysihtml5-0.3.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/wysihtml5-0.3.0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery-ui-1.10.1.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery-ui-1.10.1.custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.collapsible.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.collapsible.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.dataTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.flot.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.flot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.flot.stack.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.flot.stack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.flot.time.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.flot.time.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.gritter.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.gritter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.knob.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.knob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.minicolors.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.minicolors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.sparkline.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.sparkline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.tablesorter.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.tablesorter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.tagsinput.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.tagsinput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/advimage/js/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/advimage/js/image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/advlink/link.htm" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/advlink/link.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/advlist/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/advlist/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/autoresize/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/autoresize/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/autosave/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/autosave/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/bbcode/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/bbcode/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/contextmenu/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/contextmenu/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/fullpage/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/fullpage/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/fullpage/js/fullpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/fullpage/js/fullpage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/inlinepopups/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/inlinepopups/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/insertdatetime/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/insertdatetime/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/layer/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/layer/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/media/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/media/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/media/js/media.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/media/js/media.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/noneditable/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/noneditable/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/paste/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/paste/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/searchreplace/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/searchreplace/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/searchreplace/js/searchreplace.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/searchreplace/js/searchreplace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/style/js/props.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/style/js/props.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/table/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/table/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/table/js/cell.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/table/js/cell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/template/editor_plugin_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/template/editor_plugin_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/template/js/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/template/js/template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/plugins/xhtmlxtras/js/element_common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/plugins/xhtmlxtras/js/element_common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/themes/advanced/color_picker.htm" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/themes/advanced/color_picker.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/themes/advanced/editor_template_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/themes/advanced/editor_template_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/themes/advanced/js/color_picker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/themes/advanced/js/color_picker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/themes/advanced/js/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/themes/advanced/js/image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/tiny_mce_src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/tiny_mce_src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tiny_mce/utils/mctabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tiny_mce/utils/mctabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/document/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/document/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/document/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/document/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/document/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/document/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/document/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/document/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/provider/create.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/provider/edit.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/provider/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/provider/show.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,11 +24,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_28_131017_create_type__articles_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="17" column="42" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DocEnteteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+              <folding>
+                <element signature="e#40#60#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -338,12 +251,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552432839072</updated>
-      <workItem from="1552432853786" duration="5031000" />
+      <workItem from="1552432853786" duration="5577000" />
     </task>
+    <task id="LOCAL-00001" summary="Third commit change">
+      <created>1552438419022</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552438419022</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5031000" />
+    <option name="totallyTimeSpent" value="5577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -351,13 +272,13 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27382752" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.27382752" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="3" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
@@ -623,6 +544,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="42" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DocEnteteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+          <folding>
+            <element signature="e#40#60#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
